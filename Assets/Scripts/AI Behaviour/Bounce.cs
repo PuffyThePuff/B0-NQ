@@ -24,5 +24,7 @@ public class Bounce : MonoBehaviour
         var direction = Vector3.Reflect(lastVel.normalized, collision.contacts[0].normal);
 
         rb.velocity = direction * Mathf.Max(speed, 0f);
+        rb.angularVelocity = Vector3.zero;
+        rb.inertiaTensor = Vector3.zero;
     }
 }
