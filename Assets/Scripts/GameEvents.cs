@@ -7,6 +7,9 @@ public class GameEvents : MonoBehaviour
 {
     public static GameEvents current;
 
+    //to subscribe use Gamevents.current.onAntReachGoal += <function here>;
+    //to invoke use Gamevents.current.AntReachGoal();
+
     private void Awake()
     {
         current = this;
