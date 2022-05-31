@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 56072f08c4aa5f44f82d6982b51db774
+  - enabled: 1
+    path: Assets/Scenes/UIDemoScene.unity
+    guid: 86270e50eebd2dc4d8ca108190bd5ebc
+  - enabled: 1
+    path: Assets/Scenes/ObjectPoolScene.unity
+    guid: bd3fe02596691544fb711d2715a23140
+  - enabled: 1
+    path: Assets/Scenes/EventBroadcasterDemo.unity
+    guid: 8609cbc24e590ef4789eee154e26bcc3
+  - enabled: 1
+    path: Assets/Scenes/SceneLighting.unity
+    guid: 898fc91607947d24cbd519a86cebb543
+  - enabled: 1
+    path: Assets/Scenes/BasicAnimationDemo.unity
+    guid: f63f55ed51b22ae459534dc0b6feaf54
+  - enabled: 1
+    path: Assets/Scenes/ParticleEffectsDemo.unity
+    guid: 095b3f91d6aafd04b943371ba1c68b8c
+  - enabled: 1
+    path: Assets/Scenes/VisualEffectsMenuScene.unity
+    guid: 5740993e5aec5a84b82c47908697e8d1
+  - enabled: 1
+    path: Assets/Scenes/BasicLightingScene.unity
+    guid: 5931a897a8334194d8e3a26ca4d9a654
+  - enabled: 1
+    path: Assets/Scenes/RealtimeLighting.unity
+    guid: 1d76e0de8d39a274abddf465eb481b7d
+  - enabled: 1
+    path: Assets/Scenes/BakedLighting.unity
+    guid: 67d6643e7308e644cbe98f2b25250b1a
+  - enabled: 1
+    path: Assets/Scenes/AdvancedAnimationDemo.unity
+    guid: f2edf11bbfb45614995511cd8d5180f9
+  - enabled: 1
+    path: Assets/Scenes/Dota2UISample.unity
+    guid: ddf7956b3fa481444a4a93ca316c8f0a
+  - enabled: 1
+    path: Assets/Scenes/PathfindingScene.unity
+    guid: 1c2b14ddc7847794eb48d8f4855a073c
+  m_configObjects: {}
