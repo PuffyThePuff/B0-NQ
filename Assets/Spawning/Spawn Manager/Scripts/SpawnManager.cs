@@ -31,7 +31,6 @@ public class SpawnManager : MonoBehaviour
             values.Remove(randomObstacleIDX);
         }
 
-        Debug.Log(values.Count());
     }
 
     // Update is called once per frame
@@ -39,4 +38,7 @@ public class SpawnManager : MonoBehaviour
     {
         
     }
+
+    
+
 }
