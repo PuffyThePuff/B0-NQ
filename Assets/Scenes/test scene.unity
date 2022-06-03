@@ -716,10 +716,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9063223950647610075, guid: ff8934b24e91d2a46bdf14cc9e1de1f0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9063223951452974281, guid: ff8934b24e91d2a46bdf14cc9e1de1f0, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -807,10 +803,6 @@ PrefabInstance:
     - target: {fileID: 9063223951452974285, guid: ff8934b24e91d2a46bdf14cc9e1de1f0, type: 3}
       propertyPath: m_Name
       value: Level Foreground Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 9063223952208856025, guid: ff8934b24e91d2a46bdf14cc9e1de1f0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff8934b24e91d2a46bdf14cc9e1de1f0, type: 3}
