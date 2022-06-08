@@ -17,11 +17,14 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     private List<GameObject> Obstacle;
 
+    private int randomObstacleIDX;
+    private List<int> values;
+
     // Start is called before the first frame update
     void Start()
     {
-        List<int> values = Enumerable.Range(0, positions.Count).ToList();
-        int randomObstacleIDX;
+        values = Enumerable.Range(0, positions.Count).ToList();
+        
 
         for (int i = 0; i < ObstacleCounter; i++)
         {
