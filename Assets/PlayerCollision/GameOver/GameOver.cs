@@ -7,14 +7,21 @@ public class GameOver : MonoBehaviour
     [SerializeField]
     private GameObject GameOverPanel;
 
+    private GameEvents gameEvents;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
+    {
+        
+    }
+
+    public void Over()
     {
         
     }
@@ -27,6 +34,7 @@ public class GameOver : MonoBehaviour
         {
             Time.timeScale = 0;
             Debug.Log("Game Over");
+            GameEvents.current.GameOver += <>;
             GameOverPanel.SetActive(true);
         }
     }
