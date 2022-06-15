@@ -8,6 +8,7 @@ public class GameOver : MonoBehaviour
     private GameObject GameOverPanel;
 
     private GameEvents gameEvents;
+    private GameObject gg;
 
     // Start is called before the first frame update
     void Start()
@@ -30,12 +31,14 @@ public class GameOver : MonoBehaviour
     {
         
         Debug.Log(collision.gameObject.tag);
-        if(collision.gameObject.tag == "Player")
+        if(collision.gameObject.tag == "obstacle")
         {
             Time.timeScale = 0;
             Debug.Log("Game Over");
             //GameEvents.current.GameOver += <>;
             GameOverPanel.SetActive(true);
+            //gg = GameObject.FindGameObjectWithTag("gameover");
+            //gg.SetActive(true);
         }
     }
 }

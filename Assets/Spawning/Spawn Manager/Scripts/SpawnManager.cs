@@ -29,7 +29,7 @@ public class SpawnManager : MonoBehaviour
         for (int i = 0; i < ObstacleCounter; i++)
         {
             randomObstacleIDX = values[Random.Range(0, values.Count)];
-            GameObject obstacle = Instantiate(this.Obstacle[0].gameObject, positions[randomObstacleIDX].gameObject.transform.position, Quaternion.Euler(0.0f, 0.0f, 0.0f));
+            GameObject obstacle = Instantiate(this.Obstacle[0].gameObject, positions[randomObstacleIDX].gameObject.transform.position, positions[randomObstacleIDX].gameObject.transform.rotation);
             obstacle.transform.parent = ImageTarget.transform;
             values.Remove(randomObstacleIDX);
         }
