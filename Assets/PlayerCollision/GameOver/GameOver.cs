@@ -34,7 +34,7 @@ public class GameOver : MonoBehaviour
         {
             Time.timeScale = 0;
             Debug.Log("Game Over");
-            GameEvents.current.GameOver += <>;
+            //GameEvents.current.GameOver += <>;
             GameOverPanel.SetActive(true);
         }
     }
