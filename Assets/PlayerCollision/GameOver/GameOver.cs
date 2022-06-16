@@ -31,10 +31,11 @@ public class GameOver : MonoBehaviour
     {
         
         Debug.Log(collision.gameObject.tag);
-        if(collision.gameObject.tag == "obstacle")
+        if(collision.gameObject.tag == "obstacle" || collision.gameObject.tag == "Border")
         {
             Time.timeScale = 0;
-            Debug.Log("Game Over");
+            //Debug.Log("Game Over");
+            Debug.Log(LevelAttributeHandling.Instance.timeRemaining);
             //GameEvents.current.GameOver += <>;
             GameOverPanel.SetActive(true);
             //gg = GameObject.FindGameObjectWithTag("gameover");

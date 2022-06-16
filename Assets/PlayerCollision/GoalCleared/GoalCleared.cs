@@ -26,7 +26,8 @@ public class GoalCleared : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Time.timeScale = 0;
-            Debug.Log("Game Over");
+            
+            Debug.Log(LevelAttributeHandling.Instance.timeRemaining);
             GoalClearedPanel.SetActive(true);
         }
     }
