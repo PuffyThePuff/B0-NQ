@@ -63,9 +63,4 @@ public class LevelAttributeHandling : MonoBehaviour
 
         activeLevel = true;
     }
-
-    public void setActiveLevel(bool activeLevel)
-    {
-        this.activeLevel = activeLevel;
-    }
 }

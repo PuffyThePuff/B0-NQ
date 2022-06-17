@@ -17,19 +17,16 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     private List<GameObject> Obstacle;
 
-    private int randomObstacleIDX;
-    private List<int> values;
-
     // Start is called before the first frame update
     void Start()
     {
-        values = Enumerable.Range(0, positions.Count).ToList();
-        
+        List<int> values = Enumerable.Range(0, positions.Count).ToList();
+        int randomObstacleIDX;
 
         for (int i = 0; i < ObstacleCounter; i++)
         {
             randomObstacleIDX = values[Random.Range(0, values.Count)];
-            GameObject obstacle = Instantiate(this.Obstacle[Random.Range(0, Obstacle.Count)].gameObject, positions[randomObstacleIDX].gameObject.transform.position, positions[randomObstacleIDX].gameObject.transform.rotation);
+            GameObject obstacle = Instantiate(this.Obstacle[0].gameObject, positions[randomObstacleIDX].gameObject.transform.position, Quaternion.Euler(0.0f, 0.0f, 0.0f));
             obstacle.transform.parent = ImageTarget.transform;
             values.Remove(randomObstacleIDX);
         }
