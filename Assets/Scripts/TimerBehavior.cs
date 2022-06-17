@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class TimerBehavior : MonoBehaviour
 {
@@ -16,6 +17,6 @@ public class TimerBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timerText.text = LevelAttributeHandling.Instance.timeRemaining.ToString();
+        timerText.text = Math.Round(LevelAttributeHandling.Instance.timeRemaining, 2).ToString();
     }
 }

@@ -20,6 +20,8 @@ public class LevelAttributeHandling : MonoBehaviour
 
     public float timeLimit;
     public float timeRemaining;
+    public float timeToBeat = 0.0f;
+
     public int obstacleCount;
     public int platformCount;
 
@@ -45,22 +47,25 @@ public class LevelAttributeHandling : MonoBehaviour
                 timeLimit = 60.0f;
                 timeRemaining = 60.0f;
                 obstacleCount = 2;
-                platformCount = 5;
+                platformCount = 2;
                 break;
             case 2:
                 timeLimit = 80.0f;
                 timeRemaining = 80.0f;
                 obstacleCount = 3;
-                platformCount = 5;
+                platformCount = 2;
                 break;
             case 3:
                 timeLimit = 80.0f;
                 timeRemaining = 80.0f;
                 obstacleCount = 5;
-                platformCount = 6;
+                platformCount = 2;
                 break;
         }
+    }
 
-        activeLevel = true;
+    public void UpdateBestTime()
+    {
+        if (timeRemaining > timeToBeat) timeRemaining = timeToBeat;
     }
 }
