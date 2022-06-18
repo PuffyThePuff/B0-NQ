@@ -33,9 +33,13 @@ public class GoalCleared : MonoBehaviour
         Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
-            LevelAttributeHandling.Instance.UpdateBestTime();
-            BestScoreText.text = "";
-            BestScoreText.text = Math.Round(LevelAttributeHandling.Instance.timeRemaining, 2).ToString();
+            BestScoreText.text = " ";
+            if (LevelAttributeHandling.Instance.UpdateBestTime())
+            {
+                
+                BestScoreText.text = Math.Round(LevelAttributeHandling.Instance.timeToBeat, 2).ToString();
+            }
+
             Time.timeScale = 0;
             
             ScoreText.text = "Time Left: " + Math.Round(LevelAttributeHandling.Instance.timeRemaining, 2);

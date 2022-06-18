@@ -17,6 +17,7 @@ public class LevelAttributeHandling : MonoBehaviour
     }
 
     public bool activeLevel = false;
+    public bool ChangeHighScore = false;
 
     public float timeLimit;
     public float timeRemaining;
@@ -64,9 +65,19 @@ public class LevelAttributeHandling : MonoBehaviour
         }
     }
 
-    public void UpdateBestTime()
+    public bool UpdateBestTime()
     {
-        if (timeRemaining > timeToBeat) timeToBeat = timeRemaining;
+        ChangeHighScore = false;
+        if (timeRemaining > timeToBeat)
+        {
+            timeToBeat = timeRemaining;
+            ChangeHighScore = true;
+            return ChangeHighScore;
+        }
+        else
+        {
+            return ChangeHighScore;
+        }
     }
 
     public void setActiveLevel(bool activeLevel)

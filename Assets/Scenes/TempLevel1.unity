@@ -1225,6 +1225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1700810714}
+  BestScoreText: {fileID: 222505292}
 --- !u!43 &679840977
 Mesh:
   m_ObjectHideFlags: 0
@@ -2653,6 +2654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeLevel: 1
+  ChangeHighScore: 0
   timeLimit: 60
   timeRemaining: 60
   timeToBeat: 0
@@ -2787,6 +2789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1354025573}
+  BestScoreText: {fileID: 222505292}
 --- !u!1001 &1650844171
 PrefabInstance:
   m_ObjectHideFlags: 0

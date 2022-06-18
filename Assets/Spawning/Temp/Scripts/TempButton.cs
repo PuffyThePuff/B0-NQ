@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System;
 
 public class TempButton : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class TempButton : MonoBehaviour
 
     [SerializeField]
     private GameObject Panel;
+
+    
 
     void Start()
     {
@@ -25,8 +29,13 @@ public class TempButton : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Panel.SetActive(false);
+        
+
         LevelAttributeHandling.Instance.timeRemaining = LevelAttributeHandling.Instance.timeLimit;
         Time.timeScale = 1.0f;
+
+        
+        
     }
 
     
