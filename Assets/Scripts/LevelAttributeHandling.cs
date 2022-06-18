@@ -66,7 +66,7 @@ public class LevelAttributeHandling : MonoBehaviour
 
     public void UpdateBestTime()
     {
-        if (timeRemaining > timeToBeat) timeRemaining = timeToBeat;
+        if (timeRemaining > timeToBeat) timeToBeat = timeRemaining;
     }
 
     public void setActiveLevel(bool activeLevel)

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -217,7 +217,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &606348053
 PrefabInstance:
@@ -358,6 +358,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4475441, y: 2.130629, z: 1.7179999}
   m_Center: {x: -0.11557487, y: -0.040314436, z: -0.8095}
+--- !u!4 &766833359 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7179089733599167599, guid: 59878f527a42424469dc6d3dc89b5fdb, type: 3}
+  m_PrefabInstance: {fileID: 606348053}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &766833360
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -543,13 +548,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1436491820}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -2.61, y: 1.562, z: -0.96}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 766833359}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!43 &1461023114
 Mesh:
   m_ObjectHideFlags: 0
@@ -743,7 +748,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6763638597649761334, guid: 08a54d5734779f24cb2fa514d73308f3, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6763638597649761334, guid: 08a54d5734779f24cb2fa514d73308f3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -800,7 +805,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 14167402867233988, guid: d770a63993e0c1c469d4eb0b7971e558, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 14167402867233988, guid: d770a63993e0c1c469d4eb0b7971e558, type: 3}
       propertyPath: m_LocalPosition.x
