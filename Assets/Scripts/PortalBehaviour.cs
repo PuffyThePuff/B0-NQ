@@ -17,7 +17,7 @@ public class PortalBehaviour : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.transform.position = destination.position + new Vector3(0, other.transform.position.y);
+            other.transform.position = destination.position;
             Debug.Log("portal");
         }
     }
