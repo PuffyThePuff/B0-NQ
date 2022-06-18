@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
 
 public class GoalCleared : MonoBehaviour
 {
@@ -8,7 +10,10 @@ public class GoalCleared : MonoBehaviour
     private GameObject GoalClearedPanel;
 
     [SerializeField]
-    private Text
+    private Text ScoreText;
+
+    [SerializeField]
+    private Text BestScoreText;
 
     // Start is called before the first frame update
     void Start()
@@ -28,9 +33,12 @@ public class GoalCleared : MonoBehaviour
         Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
+            LevelAttributeHandling.Instance.UpdateBestTime();
+            BestScoreText.text = "";
+            BestScoreText.text = Math.Round(LevelAttributeHandling.Instance.timeRemaining, 2).ToString();
             Time.timeScale = 0;
             
-            Debug.Log(LevelAttributeHandling.Instance.timeRemaining);
+            ScoreText.text = "Time Left: " + Math.Round(LevelAttributeHandling.Instance.timeRemaining, 2);
             GoalClearedPanel.SetActive(true);
         }
     }
