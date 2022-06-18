@@ -68,4 +68,9 @@ public class LevelAttributeHandling : MonoBehaviour
     {
         if (timeRemaining > timeToBeat) timeRemaining = timeToBeat;
     }
+
+    public void setActiveLevel(bool activeLevel)
+    {
+        this.activeLevel = activeLevel;
+    }
 }
