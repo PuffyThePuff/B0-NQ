@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class TempButton : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    [SerializeField]
+    private GameObject Panel;
+
     void Start()
     {
         
@@ -20,6 +24,9 @@ public class TempButton : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Panel.SetActive(false);
+        LevelAttributeHandling.Instance.timeRemaining = LevelAttributeHandling.Instance.timeLimit;
+        Time.timeScale = 1.0f;
     }
 
     

@@ -7,6 +7,9 @@ public class GoalCleared : MonoBehaviour
     [SerializeField]
     private GameObject GoalClearedPanel;
 
+    [SerializeField]
+    private Text
+
     // Start is called before the first frame update
     void Start()
     {
