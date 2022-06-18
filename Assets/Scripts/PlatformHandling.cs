@@ -4,32 +4,22 @@ using UnityEngine;
 
 public class PlatformHandling : MonoBehaviour
 {
-    [SerializeField]
-    private PlatformCounter platformcounter;
+    private List<GameObject> usedPlatforms = new List<GameObject>();
 
-    // Start is called before the first frame update
-    void Start()
+    public void OnTargetFound(GameObject platform)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void onTargetLost()
-    {
-        if (LevelAttributeHandling.Instance.platformCount > 0)
-        {
-            LevelAttributeHandling.Instance.platformCount = LevelAttributeHandling.Instance.platformCount - 1;
-            platformcounter.UpdateCounter();
+        if (usedPlatforms.Count < LevelAttributeHandling.Instance.platformCount) {
+            usedPlatforms.Add(platform);
         }
-         
     }
-    public void onTargetFound()
+
+    public void OnTargetLost(GameObject platform)
     {
-        LevelAttributeHandling.Instance.platformCount = LevelAttributeHandling.Instance.platformCount + 1;
-        platformcounter.UpdateCounter();
+        usedPlatforms.Remove(platform);
+    }
+
+    public int GetUsedCount()
+    {
+        return usedPlatforms.Count;
     }
 }
