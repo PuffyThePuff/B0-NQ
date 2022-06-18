@@ -12,7 +12,7 @@ public class BestTimeCounter : MonoBehaviour
 
     void Start()
     {
-        
+        UpdateBestScore();
     }
 
     // Update is called once per frame

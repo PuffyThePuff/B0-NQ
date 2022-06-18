@@ -12,8 +12,9 @@ public class GoalCleared : MonoBehaviour
     [SerializeField]
     private Text ScoreText;
 
-    [SerializeField]
-    private Text BestScoreText;
+    
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,12 +34,8 @@ public class GoalCleared : MonoBehaviour
         Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
-            BestScoreText.text = " ";
-            if (LevelAttributeHandling.Instance.UpdateBestTime())
-            {
-                
-                BestScoreText.text = Math.Round(LevelAttributeHandling.Instance.timeToBeat, 2).ToString();
-            }
+
+            LevelAttributeHandling.Instance.UpdateBestTime();
 
             Time.timeScale = 0;
             
