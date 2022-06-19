@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
 
 public class GameOver : MonoBehaviour
 {
@@ -9,6 +11,9 @@ public class GameOver : MonoBehaviour
 
     private GameEvents gameEvents;
     private GameObject gg;
+
+    [SerializeField]
+    private Text ScoreText;
 
     // Start is called before the first frame update
     void Start()
@@ -34,9 +39,7 @@ public class GameOver : MonoBehaviour
         if(collision.gameObject.tag == "obstacle" || collision.gameObject.tag == "Border")
         {
             Time.timeScale = 0;
-            //Debug.Log("Game Over");
-            Debug.Log(LevelAttributeHandling.Instance.timeRemaining);
-            //GameEvents.current.GameOver += <>;
+            ScoreText.text = "Time Left: " + Math.Round(LevelAttributeHandling.Instance.timeRemaining, 2);
             GameOverPanel.SetActive(true);
             //gg = GameObject.FindGameObjectWithTag("gameover");
             //gg.SetActive(true);
