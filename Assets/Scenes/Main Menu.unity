@@ -1605,11 +1605,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f60337b56f66cff4191fcf25541fe165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeLevel: 0
-  timeLimit: 0
-  timeRemaining: 0
-  obstacleCount: 0
-  platformCount: 0
+  activeLevel: 1
+  ChangeHighScore: 0
+  timeLimit: 60
+  timeRemaining: 60
+  timeToBeat: 0
+  obstacleCount: 4
+  platformCount: 2
 --- !u!4 &1024834317
 Transform:
   m_ObjectHideFlags: 0

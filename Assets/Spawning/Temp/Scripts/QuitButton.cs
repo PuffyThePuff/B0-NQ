@@ -19,7 +19,15 @@ public class QuitButton : MonoBehaviour
 
     public void QuitGame()
     {
+        LevelAttributeHandling[] components = GameObject.FindObjectsOfType<LevelAttributeHandling>();
+        foreach (LevelAttributeHandling comp in components)
+            Destroy(comp.gameObject);
+
+
+
         SceneManager.LoadScene("Main Menu", LoadSceneMode.Single);
-        LevelAttributeHandling.Instance.setActiveLevel(false);
+        //LevelAttributeHandling.Instance.setActiveLevel(false);
+
+        
     }
 }
