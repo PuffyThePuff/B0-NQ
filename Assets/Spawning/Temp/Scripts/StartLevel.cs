@@ -19,6 +19,10 @@ public class StartLevel : MonoBehaviour
 
     public void StartFirstLevel()
     {
+        if(Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+        }
         SceneManager.LoadScene("TempLevel1", LoadSceneMode.Single);
     }
 }
