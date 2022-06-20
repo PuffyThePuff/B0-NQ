@@ -26,11 +26,7 @@ public class LevelAttributeHandling : MonoBehaviour
     public int obstacleCount;
     public int platformCount;
 
-    private void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
-
+    
     private void Update()
     {
         if (activeLevel)

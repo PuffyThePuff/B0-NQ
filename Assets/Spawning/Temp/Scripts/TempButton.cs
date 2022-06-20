@@ -12,21 +12,24 @@ public class TempButton : MonoBehaviour
     [SerializeField]
     private GameObject Panel;
 
+    [SerializeField]
+    private GameObject PausePanel;
+
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("TempLevel1");
         Panel.SetActive(false);
 
 
@@ -34,9 +37,11 @@ public class TempButton : MonoBehaviour
         LevelAttributeHandling.Instance.timeRemaining = LevelAttributeHandling.Instance.timeLimit;
         Time.timeScale = 1.0f;
 
-        
-        
     }
 
-    
+    private void Awake()
+    {
+        DontDestroyOnLoad(Panel);
+        DontDestroyOnLoad(PausePanel);
+    }
 }

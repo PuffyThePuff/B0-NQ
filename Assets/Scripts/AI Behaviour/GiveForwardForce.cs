@@ -12,7 +12,24 @@ public class GiveForwardForce : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         rb = GetComponent<Rigidbody>();
         rb.AddForce(x, y, z);
+        
+    }
+
+    void Update()
+    {
+        
+    }
+
+    public void MoveCube(bool shouldMove)
+    {
+        if (shouldMove)
+        {
+            rb = GetComponent<Rigidbody>();
+            rb.AddForce(x, y, z);
+        }
+        
     }
 }
